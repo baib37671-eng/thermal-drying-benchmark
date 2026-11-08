@@ -1,0 +1,40 @@
+{
+  "description": "Post-4-hour assumed-boundary stress tests; not uncertainty intervals",
+  "source_environment_h": 4,
+  "platform_mean_temperature_C": 49.998934426229496,
+  "platform_mean_moisture_input": 0.049987540983606554,
+  "last_point_temperature_C": 50.165,
+  "last_point_moisture_input": 0.04986,
+  "results": [
+    {
+      "scenario": "platform_mean",
+      "A_fixed_h": 57.47547331558247,
+      "B_shrinking_h": 51.09583472199245
+    },
+    {
+      "scenario": "last_point",
+      "A_fixed_h": 57.170848800310836,
+      "B_shrinking_h": 50.82803189494042
+    },
+    {
+      "scenario": "cooler_1C",
+      "A_fixed_h": 59.34239792841435,
+      "B_shrinking_h": 52.73310083961851
+    },
+    {
+      "scenario": "warmer_1C",
+      "A_fixed_h": 55.690163089465365,
+      "B_shrinking_h": 49.529244111737086
+    },
+    {
+      "scenario": "drier_10pct",
+      "A_fixed_h": 57.381403005239825,
+      "B_shrinking_h": 50.99691265245526
+    },
+    {
+      "scenario": "wetter_10pct",
+      "A_fixed_h": 57.587538824176605,
+      "B_shrinking_h": 51.22297671651787
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿tag,case,shrink,td_h,R_end_cm,tau_end
+a3fix,3,0,57.4726,2,1
+a3shr,3,1,25.2504,1.203,1
+a4fix,4,0,129.843,2,1
+a4shr,4,1,51.098,1.2,1

@@ -1,0 +1,2842 @@
+{
+ "att1_rows": {
+  "value": 241,
+  "unit": "count",
+  "source": "figdata/env_att1.csv",
+  "method": "len(rows)"
+ },
+ "att1_dt_unique_s": {
+  "value": [
+   60.0
+  ],
+  "unit": "s",
+  "source": "figdata/env_att1.csv",
+  "method": "set(diff(t))"
+ },
+ "att1_t_end_s": {
+  "value": 14400.0,
+  "unit": "s",
+  "source": "figdata/env_att1.csv",
+  "method": "t[-1]"
+ },
+ "att1_t_end_h": {
+  "value": 4.0,
+  "unit": "h",
+  "source": "figdata/env_att1.csv",
+  "method": "t[-1]/3600"
+ },
+ "att2_file_rows": {
+  "value": 2145,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv",
+  "method": "len(rows) 含拟合插值行"
+ },
+ "att2_data_rows": {
+  "value": 145,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv",
+  "method": "R_data_cm 非空计数"
+ },
+ "att2_dt_unique_s": {
+  "value": [
+   1800.0
+  ],
+  "unit": "s",
+  "source": "figdata/radius_att2.csv",
+  "method": "set(diff(t)) on data rows"
+ },
+ "att2_t_end_s": {
+  "value": 259200.0,
+  "unit": "s",
+  "source": "figdata/radius_att2.csv",
+  "method": "t[-1] of data rows"
+ },
+ "att2_t_end_h": {
+  "value": 72.0,
+  "unit": "h",
+  "source": "figdata/radius_att2.csv",
+  "method": "/3600"
+ },
+ "att2_R_first_cm": {
+  "value": 2.0,
+  "unit": "cm",
+  "source": "figdata/radius_att2.csv",
+  "method": "R_data[0]"
+ },
+ "att2_R_last_cm": {
+  "value": 1.198,
+  "unit": "cm",
+  "source": "figdata/radius_att2.csv",
+  "method": "R_data[-1]"
+ },
+ "att2_R_min_cm": {
+  "value": 1.198,
+  "unit": "cm",
+  "source": "figdata/radius_att2.csv",
+  "method": "min"
+ },
+ "att2_R_max_cm": {
+  "value": 2.0,
+  "unit": "cm",
+  "source": "figdata/radius_att2.csv",
+  "method": "max"
+ },
+ "att2_R_diff_down": {
+  "value": 52,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv",
+  "method": "diff<0"
+ },
+ "att2_R_diff_flat": {
+  "value": 92,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv",
+  "method": "diff==0"
+ },
+ "att2_R_diff_up": {
+  "value": 0,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv",
+  "method": "diff>0"
+ },
+ "T_plat_mean61_C": {
+  "value": 49.99893442622951,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "mean(T[-61:])"
+ },
+ "C_plat_mean61": {
+  "value": 0.04998754098360656,
+  "unit": "kg/kg",
+  "source": "figdata/env_att1.csv",
+  "method": "mean(C[-61:])"
+ },
+ "T_lastpoint_C": {
+  "value": 50.165,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "T[-1]"
+ },
+ "C_lastpoint": {
+  "value": 0.04986,
+  "unit": "kg/kg",
+  "source": "figdata/env_att1.csv",
+  "method": "C[-1]"
+ },
+ "n_plat_window": {
+  "value": 61,
+  "unit": "count",
+  "source": "boundary_sensitivity.py 口径",
+  "method": "末 1 h = 61 点（含端点）"
+ },
+ "segment_slopes": {
+  "value": [
+   {
+    "bin": 1,
+    "n": 61,
+    "slope_C_per_h": 19.235146483342145,
+    "sd_within_ddof0_C": 5.763042448746799,
+    "sd_within_ddof1_C": 5.810869347222651,
+    "sd_fitresid_C": 1.182444936209691,
+    "range_C": 19.485,
+    "T_first_C": 28.0,
+    "T_last_C": 47.485
+   },
+   {
+    "bin": 2,
+    "n": 61,
+    "slope_C_per_h": 2.246646218931782,
+    "sd_within_ddof0_C": 0.6965122073868971,
+    "sd_within_ddof1_C": 0.702292490792085,
+    "sd_fitresid_C": 0.22847738362776301,
+    "range_C": 2.456000000000003,
+    "T_first_C": 47.485,
+    "T_last_C": 49.852
+   },
+   {
+    "bin": 3,
+    "n": 61,
+    "slope_C_per_h": 0.30139925965098,
+    "sd_within_ddof0_C": 0.17080034502538363,
+    "sd_within_ddof1_C": 0.17221779957891478,
+    "sd_fitresid_C": 0.14857332521435382,
+    "range_C": 0.6340000000000003,
+    "T_first_C": 49.852,
+    "T_last_C": 50.195
+   },
+   {
+    "bin": 4,
+    "n": 61,
+    "slope_C_per_h": 0.002823902696985863,
+    "sd_within_ddof0_C": 0.15308294856940663,
+    "sd_within_ddof1_C": 0.15435336826607315,
+    "sd_fitresid_C": 0.15565367085648954,
+    "range_C": 0.4789999999999992,
+    "T_first_C": 50.195,
+    "T_last_C": 50.165
+   }
+  ],
+  "unit": "degC/h",
+  "source": "figdata/env_att1.csv",
+  "method": "每段独立最小二乘，n=61"
+ },
+ "segment_slopes_archived": {
+  "value": [
+   {
+    "bin": 1,
+    "slope_C_per_h": 19.235146,
+    "sd_C": 5.763042,
+    "n": 61
+   },
+   {
+    "bin": 2,
+    "slope_C_per_h": 2.246646,
+    "sd_C": 0.696512,
+    "n": 61
+   },
+   {
+    "bin": 3,
+    "slope_C_per_h": 0.301399,
+    "sd_C": 0.1708,
+    "n": 61
+   },
+   {
+    "bin": 4,
+    "slope_C_per_h": 0.002824,
+    "sd_C": 0.153083,
+    "n": 61
+   }
+  ],
+  "unit": "degC/h",
+  "source": "thermal_science/data/boundary_trend.csv",
+  "method": "已归档值，用于对照"
+ },
+ "segment_slope_max_absdiff": {
+  "value": 4.833421449745856e-07,
+  "unit": "degC/h",
+  "source": "重算 vs 归档",
+  "method": "斜率 max|diff| 应为 0 量级"
+ },
+ "segment_sd_archived_kouji": {
+  "value": "ddof=0 段内标准差",
+  "unit": "degC",
+  "source": "重算 vs 归档",
+  "method": "三种口径逐一比对，取 max|diff| 最小者"
+ },
+ "segment_sd_maxdiff_ddof0": {
+  "value": 4.4874679883122326e-07,
+  "unit": "degC",
+  "source": "重算 vs 归档",
+  "method": "应 <1e-5"
+ },
+ "segment_sd_maxdiff_ddof1": {
+  "value": 0.047827347222650474,
+  "unit": "degC",
+  "source": "重算 vs 归档",
+  "method": "对照"
+ },
+ "segment_sd_maxdiff_fitresid": {
+  "value": 4.580597063790309,
+  "unit": "degC",
+  "source": "重算 vs 归档",
+  "method": "对照"
+ },
+ "td_A_fixed_h": {
+  "value": 57.47547331558247,
+  "unit": "h",
+  "source": "figdata/ablation.json",
+  "method": "生产算例 Nc=1600 dt=7.5"
+ },
+ "td_A_fixed_s": {
+  "value": 206911.7039360969,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "td_h*3600"
+ },
+ "td_A_shrinking_h": {
+  "value": 25.24775975330209,
+  "unit": "h",
+  "source": "figdata/ablation.json",
+  "method": "生产算例 Nc=1600 dt=7.5"
+ },
+ "td_A_shrinking_s": {
+  "value": 90891.93511188753,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "td_h*3600"
+ },
+ "td_B_fixed_h": {
+  "value": 129.8491852960551,
+  "unit": "h",
+  "source": "figdata/ablation.json",
+  "method": "生产算例 Nc=1600 dt=7.5"
+ },
+ "td_B_fixed_s": {
+  "value": 467457.0670657984,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "td_h*3600"
+ },
+ "td_B_shrinking_h": {
+  "value": 51.09583472199245,
+  "unit": "h",
+  "source": "figdata/ablation.json",
+  "method": "生产算例 Nc=1600 dt=7.5"
+ },
+ "td_B_shrinking_s": {
+  "value": 183945.00499917284,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "td_h*3600"
+ },
+ "td_hit_A_fixed_s": {
+  "value": 206911.7039360969,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "t_hit_s"
+ },
+ "td_hit_B_shrinking_s": {
+  "value": 183945.00499917284,
+  "unit": "s",
+  "source": "figdata/ablation.json",
+  "method": "t_hit_s"
+ },
+ "R_at_hit_A_fixed_cm": {
+  "value": 2.0,
+  "unit": "cm",
+  "source": "figdata/ablation.json",
+  "method": "Ri_cm"
+ },
+ "R_at_hit_A_shrinking_cm": {
+  "value": 1.203,
+  "unit": "cm",
+  "source": "figdata/ablation.json",
+  "method": "Ri_cm"
+ },
+ "R_at_hit_B_shrinking_cm": {
+  "value": 1.2,
+  "unit": "cm",
+  "source": "figdata/ablation.json",
+  "method": "Ri_cm"
+ },
+ "delta_bundle_h": {
+  "value": 6.379638593590016,
+  "unit": "h",
+  "source": "ablation.json",
+  "method": "A_fixed - B_shrinking"
+ },
+ "delta_bundle_pct": {
+  "value": 11.099758254379438,
+  "unit": "%",
+  "source": "ablation.json",
+  "method": "相对 A_fixed"
+ },
+ "ratio_geo_A": {
+  "value": 0.4392788488173623,
+  "unit": "-",
+  "source": "ablation.json",
+  "method": "A_shr/A_fix"
+ },
+ "ratio_geo_B": {
+  "value": 0.393501388595503,
+  "unit": "-",
+  "source": "ablation.json",
+  "method": "B_shr/B_fix"
+ },
+ "ratio_prop_fixed": {
+  "value": 2.259210369318543,
+  "unit": "-",
+  "source": "ablation.json",
+  "method": "B_fix/A_fix"
+ },
+ "ratio_prop_shrinking": {
+  "value": 2.0237769695709242,
+  "unit": "-",
+  "source": "ablation.json",
+  "method": "B_shr/A_shr"
+ },
+ "interaction_I": {
+  "value": 0.8957895187872066,
+  "unit": "-",
+  "source": "ablation.json",
+  "method": "t_Af*t_Bs/(t_As*t_Bf)；对称口径下为恒等式，仅作交叉比读数"
+ },
+ "ablation_grid": {
+  "value": [
+   {
+    "Nc": 200,
+    "dt": 7.5,
+    "td_a3fix": 57.3864,
+    "td_a3shr": 25.2249,
+    "td_a4fix": 129.711,
+    "td_a4shr": 51.0601,
+    "G_geo": 0.439563,
+    "P_prop": 2.26031,
+    "I_int": 0.895538
+   },
+   {
+    "Nc": 400,
+    "dt": 7.5,
+    "td_a3fix": 57.4422,
+    "td_a3shr": 25.2397,
+    "td_a4fix": 129.802,
+    "td_a4shr": 51.0844,
+    "G_geo": 0.439394,
+    "P_prop": 2.2597,
+    "I_int": 0.895679
+   },
+   {
+    "Nc": 800,
+    "dt": 7.5,
+    "td_a3fix": 57.466,
+    "td_a3shr": 25.2456,
+    "td_a4fix": 129.837,
+    "td_a4shr": 51.0931,
+    "G_geo": 0.439314,
+    "P_prop": 2.25937,
+    "I_int": 0.895752
+   },
+   {
+    "Nc": 1600,
+    "dt": 7.5,
+    "td_a3fix": 57.4755,
+    "td_a3shr": 25.2478,
+    "td_a4fix": 129.849,
+    "td_a4shr": 51.0958,
+    "G_geo": 0.439279,
+    "P_prop": 2.25921,
+    "I_int": 0.89579
+   }
+  ],
+  "unit": "h / -",
+  "source": "figdata/ablation_grid.csv",
+  "method": "网格依赖四格表"
+ },
+ "fem_A_fixed_h": {
+  "value": 57.478356393859364,
+  "unit": "h",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "Nc=1600 FEM"
+ },
+ "fem_gap_A_fixed_s": {
+  "value": 10.379081796821765,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "(FEM-FVM)*3600"
+ },
+ "fem_gaprow_A_fixed_s": {
+  "value": 10.379081796821765,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "文件内 gap 行，用于对照"
+ },
+ "fem_gap_A_fixed_Nc200_s": {
+  "value": 118.24894022509227,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_A_fixed_Nc400_s": {
+  "value": 57.619831940525046,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_A_fixed_Nc800_s": {
+  "value": 25.813478281364155,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_A_fixed_Nc1600_s": {
+  "value": 10.379081796821765,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_B_shrinking_h": {
+  "value": 51.09670883753384,
+  "unit": "h",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "Nc=1600 FEM"
+ },
+ "fem_gap_B_shrinking_s": {
+  "value": 3.1468159489890013,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "(FEM-FVM)*3600"
+ },
+ "fem_gaprow_B_shrinking_s": {
+  "value": 3.1468159489890013,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "文件内 gap 行，用于对照"
+ },
+ "fem_gap_B_shrinking_Nc200_s": {
+  "value": 88.83616907107239,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_B_shrinking_Nc400_s": {
+  "value": 32.5204242545567,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_B_shrinking_Nc800_s": {
+  "value": 10.630911877271387,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "fem_gap_B_shrinking_Nc1600_s": {
+  "value": 3.1468159489890013,
+  "unit": "s",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "gap 行"
+ },
+ "order_obs": {
+  "value": {
+   "Q3_FVM": 1.3316353310213447,
+   "Q3_FEM": 1.5336429986162259,
+   "Q4_FVM": 1.6436608914407094,
+   "Q4_FEM": 1.899317949571479
+  },
+  "unit": "order",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "order_obs_nc 行"
+ },
+ "richardson_fv_h": {
+  "value": 57.478625652098735,
+  "unit": "h",
+  "source": "figdata/fem_crosscheck.csv",
+  "method": "extrap_p2 行（p=2 的 Richardson 外推）"
+ },
+ "conv_space": {
+  "value": [
+   {
+    "Nc": 25.0,
+    "err": 0.00291484
+   },
+   {
+    "Nc": 50.0,
+    "err": 0.0007274
+   },
+   {
+    "Nc": 100.0,
+    "err": 0.000181693
+   },
+   {
+    "Nc": 200.0,
+    "err": 4.54246e-05
+   },
+   {
+    "Nc": 400.0,
+    "err": 1.1356e-05
+   }
+  ],
+  "unit": "-",
+  "source": "figdata/convergence.csv",
+  "method": "原样"
+ },
+ "conv_space_orders": {
+  "value": [
+   2.002595862968399,
+   2.0012460871781372,
+   1.9999571230732407,
+   2.0000190562545717
+  ],
+  "unit": "order",
+  "source": "figdata/convergence.csv",
+  "method": "相邻比值 log2 阶（解析基准）"
+ },
+ "conv_time": {
+  "value": [
+   {
+    "dt": 4.0,
+    "err": 0.000120273
+   },
+   {
+    "dt": 2.0,
+    "err": 8.28448e-05
+   },
+   {
+    "dt": 1.0,
+    "err": 6.41307e-05
+   },
+   {
+    "dt": 0.5,
+    "err": 5.47764e-05
+   },
+   {
+    "dt": 0.25,
+    "err": 5.01005e-05
+   }
+  ],
+  "unit": "-",
+  "source": "figdata/convergence.csv",
+  "method": "原样"
+ },
+ "conv_time_orders": {
+  "value": [
+   0.5378297589194686,
+   0.3693959906684821,
+   0.22746070184075565,
+   0.1287294512361902
+  ],
+  "unit": "order",
+  "source": "figdata/convergence.csv",
+  "method": "相邻比值阶（含空间误差地板，仅作对照）"
+ },
+ "maxC_series_rows": {
+  "value": {
+   "A_fixed": 690,
+   "B_shrinking": 614
+  },
+  "unit": "count",
+  "source": "figdata/q3_maxC.csv, q4_maxC.csv",
+  "method": "len"
+ },
+ "maxC_series_dt_s": {
+  "value": {
+   "A_fixed": [
+    212.0,
+    300.0
+   ],
+   "B_shrinking": [
+    45.0,
+    300.0
+   ]
+  },
+  "unit": "s",
+  "source": "figdata/q3_maxC.csv, q4_maxC.csv",
+  "method": "set(diff) 前 3 个"
+ },
+ "threshold_scan": {
+  "value": [
+   {
+    "Ccr": 0.15,
+    "A_fixed_h": 57.47555555555556,
+    "B_shrinking_h": 51.09583333333333
+   },
+   {
+    "Ccr": 0.16,
+    "A_fixed_h": 49.260593220338976,
+    "B_shrinking_h": 46.28135738831615
+   },
+   {
+    "Ccr": 0.17,
+    "A_fixed_h": 43.08766233766232,
+    "B_shrinking_h": 42.42777777777777
+   },
+   {
+    "Ccr": 0.1737,
+    "A_fixed_h": 41.185404339250496,
+    "B_shrinking_h": 41.19153746770026
+   },
+   {
+    "Ccr": 0.18,
+    "A_fixed_h": 38.320286195286194,
+    "B_shrinking_h": 39.279965753424655
+   },
+   {
+    "Ccr": 0.19,
+    "A_fixed_h": 34.55208333333333,
+    "B_shrinking_h": 36.663085004775546
+   },
+   {
+    "Ccr": 0.2,
+    "A_fixed_h": 31.513476347634764,
+    "B_shrinking_h": 34.454563977180115
+   }
+  ],
+  "unit": "h",
+  "source": "figdata/q3_maxC.csv, q4_maxC.csv",
+  "method": "首次 C_max<=Ccr，300 s 样本间线性插值"
+ },
+ "crossing_Ccr": {
+  "value": 0.1736639438202247,
+  "unit": "kg/kg",
+  "source": "q3_maxC.csv, q4_maxC.csv",
+  "method": "二分法解 t_A(Ccr)=t_B(Ccr)"
+ },
+ "crossing_t_h": {
+  "value": 41.20318352059926,
+  "unit": "h",
+  "source": "q3_maxC.csv, q4_maxC.csv",
+  "method": "对应时刻"
+ },
+ "scan_vs_production_A_fixed_s": {
+  "value": 0.29606390310800634,
+  "unit": "s",
+  "source": "q3_maxC.csv vs ablation.json",
+  "method": "扫描口径与生产口径之差（应 <300 s 采样粒度）"
+ },
+ "scan_vs_production_B_shrinking_s": {
+  "value": -0.004999172844691202,
+  "unit": "s",
+  "source": "q4_maxC.csv vs ablation.json",
+  "method": "同上"
+ },
+ "frozen_trace_rows": {
+  "value": {
+   "dyn": 288,
+   "frz": 288
+  },
+  "unit": "count",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "len by series"
+ },
+ "frozen_trace_dt_h": {
+  "value": [
+   0.166666667
+  ],
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "set(diff)"
+ },
+ "cross_surf_dyn_h": {
+  "value": 12.552676104275879,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "dyn 序列首次 C_surf<=0.15，线性插值"
+ },
+ "cross_center_dyn_h": {
+  "value": null,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "dyn 序列首次 C_center<=0.15，线性插值"
+ },
+ "cross_surf_frz_h": {
+  "value": 16.08965395748084,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "frz 序列首次 C_surf<=0.15"
+ },
+ "cross_center_frz_h": {
+  "value": 22.539051700044528,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "frz 序列首次 C_center<=0.15"
+ },
+ "state_3h": {
+  "value": {
+   "t_h": 3.0,
+   "T_center_C": 49.8494626231265,
+   "C_center": 1.766189145737773,
+   "C_surf": 1.0081292427189008
+  },
+  "unit": "-",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "t 最接近 3 h 的行"
+ },
+ "state_3h_archived": {
+  "value": {
+   "T_center_C": 49.849463,
+   "T_surf_C": 49.9664,
+   "C_center": 1.766189,
+   "C_surf": 1.008129,
+   "n_nodes": 81
+  },
+  "unit": "-",
+  "source": "figdata/figdata_summary.json",
+  "method": "q2 3h 剖面首末节点"
+ },
+ "T_uniformity_3h_maxdiff_C": {
+  "value": 0.11693700000000007,
+  "unit": "degC",
+  "source": "figdata/figdata_summary.json",
+  "method": "3 h 剖面 T 极差"
+ },
+ "boundary_sensitivity_json": {
+  "value": {
+   "description": "Post-4-hour assumed-boundary stress tests; not uncertainty intervals",
+   "source_environment_h": 4,
+   "platform_mean_temperature_C": 49.998934426229496,
+   "platform_mean_moisture_input": 0.049987540983606554,
+   "last_point_temperature_C": 50.165,
+   "last_point_moisture_input": 0.04986,
+   "results": [
+    {
+     "scenario": "platform_mean",
+     "A_fixed_h": 57.47547331558247,
+     "B_shrinking_h": 51.09583472199245
+    },
+    {
+     "scenario": "last_point",
+     "A_fixed_h": 57.170848800310836,
+     "B_shrinking_h": 50.82803189494042
+    },
+    {
+     "scenario": "cooler_1C",
+     "A_fixed_h": 59.34239792841435,
+     "B_shrinking_h": 52.73310083961851
+    },
+    {
+     "scenario": "warmer_1C",
+     "A_fixed_h": 55.690163089465365,
+     "B_shrinking_h": 49.529244111737086
+    },
+    {
+     "scenario": "drier_10pct",
+     "A_fixed_h": 57.381403005239825,
+     "B_shrinking_h": 50.99691265245526
+    },
+    {
+     "scenario": "wetter_10pct",
+     "A_fixed_h": 57.587538824176605,
+     "B_shrinking_h": 51.22297671651787
+    }
+   ]
+  },
+  "unit": "-",
+  "source": "journal_draft/boundary_sensitivity.json",
+  "method": "原样"
+ },
+ "extrapolation_rows": {
+  "value": [
+   {
+    "scenario": "窗口·末30min",
+    "kind": "window",
+    "T_plat_C": "50.013258",
+    "C_plat_kgkg": "0.04998871",
+    "A_fixed_h": "57.449358",
+    "B_shrinking_h": "51.072931",
+    "B_minus_A_pct": "-11.0992"
+   },
+   {
+    "scenario": "窗口·末1h",
+    "kind": "window",
+    "T_plat_C": "49.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "57.475473",
+    "B_shrinking_h": "51.095835",
+    "B_minus_A_pct": "-11.0998"
+   },
+   {
+    "scenario": "窗口·末2h",
+    "kind": "window",
+    "T_plat_C": "49.968504",
+    "C_plat_kgkg": "0.04986521",
+    "A_fixed_h": "57.528569",
+    "B_shrinking_h": "51.141867",
+    "B_minus_A_pct": "-11.1018"
+   },
+   {
+    "scenario": "窗口·末3h",
+    "kind": "window",
+    "T_plat_C": "49.660740",
+    "C_plat_kgkg": "0.04888845",
+    "A_fixed_h": "58.075595",
+    "B_shrinking_h": "51.617525",
+    "B_minus_A_pct": "-11.1201"
+   },
+   {
+    "scenario": "窗口·最后一点",
+    "kind": "window",
+    "T_plat_C": "50.165000",
+    "C_plat_kgkg": "0.04986000",
+    "A_fixed_h": "57.170849",
+    "B_shrinking_h": "50.828032",
+    "B_minus_A_pct": "-11.0945"
+   },
+   {
+    "scenario": "控温-2°C",
+    "kind": "temperature",
+    "T_plat_C": "47.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "61.295050",
+    "B_shrinking_h": "54.444577",
+    "B_minus_A_pct": "-11.1762"
+   },
+   {
+    "scenario": "控温-1°C",
+    "kind": "temperature",
+    "T_plat_C": "48.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "59.342398",
+    "B_shrinking_h": "52.733101",
+    "B_minus_A_pct": "-11.1376"
+   },
+   {
+    "scenario": "控温+0°C",
+    "kind": "temperature",
+    "T_plat_C": "49.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "57.475473",
+    "B_shrinking_h": "51.095835",
+    "B_minus_A_pct": "-11.0998"
+   },
+   {
+    "scenario": "控温+1°C",
+    "kind": "temperature",
+    "T_plat_C": "50.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "55.690163",
+    "B_shrinking_h": "49.529244",
+    "B_minus_A_pct": "-11.0628"
+   },
+   {
+    "scenario": "控温+2°C",
+    "kind": "temperature",
+    "T_plat_C": "51.998934",
+    "C_plat_kgkg": "0.04998754",
+    "A_fixed_h": "53.982570",
+    "B_shrinking_h": "48.029981",
+    "B_minus_A_pct": "-11.0269"
+   }
+  ],
+  "unit": "-",
+  "source": "thermal_science/data/boundary_extrapolation.csv",
+  "method": "原样 10 行"
+ },
+ "window_span_A_h": {
+  "value": 0.9047460000000029,
+  "unit": "h",
+  "source": "boundary_extrapolation.csv",
+  "method": "max-min（5 窗口）"
+ },
+ "window_span_B_h": {
+  "value": 0.7894930000000002,
+  "unit": "h",
+  "source": "boundary_extrapolation.csv",
+  "method": "max-min"
+ },
+ "temp_span_A_h": {
+  "value": 7.312480000000001,
+  "unit": "h",
+  "source": "boundary_extrapolation.csv",
+  "method": "max-min（-2..+2 degC）"
+ },
+ "temp_span_B_h": {
+  "value": 6.414596000000003,
+  "unit": "h",
+  "source": "boundary_extrapolation.csv",
+  "method": "max-min"
+ },
+ "amplifier_A": {
+  "value": 8.082356816167165,
+  "unit": "-",
+  "source": "boundary_extrapolation.csv",
+  "method": "控温侧极差 / 窗口侧极差"
+ },
+ "amplifier_B": {
+  "value": 8.124956142739709,
+  "unit": "-",
+  "source": "boundary_extrapolation.csv",
+  "method": "同上，B"
+ },
+ "window_span_A_pct_of_base": {
+  "value": 1.5741427565672828,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "相对 A_fixed 基准"
+ },
+ "tmap_keys": {
+  "value": [
+   -2.0,
+   -1.0,
+   -0.0,
+   1.0,
+   2.0
+  ],
+  "unit": "degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "圆整后的偏移键"
+ },
+ "slope_pm1_A_h_per_C": {
+  "value": 1.8261175000000023,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "-1..+1 段中心差分（取正）"
+ },
+ "slope_pm1_B_h_per_C": {
+  "value": 1.6019284999999996,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "同上"
+ },
+ "slope_pm2_A_h_per_C": {
+  "value": 1.8281200000000002,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "-2..+2 段中心差分"
+ },
+ "slope_pm2_B_h_per_C": {
+  "value": 1.6036490000000008,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "同上"
+ },
+ "curvature_A_pct": {
+  "value": 0.10965888011028349,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "(slope_pm2-slope_pm1)/slope_pm1；中心差分口径下曲率极小"
+ },
+ "curvature_B_pct": {
+  "value": 0.10740179727129671,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "同上"
+ },
+ "slope_cold1_A_h_per_C": {
+  "value": 1.866925000000002,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->-1 单边"
+ },
+ "slope_warm1_A_h_per_C": {
+  "value": 1.7853100000000026,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->+1 单边"
+ },
+ "slope_cold2_A_h_per_C": {
+  "value": 1.9097885000000012,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->-2 单边"
+ },
+ "slope_warm2_A_h_per_C": {
+  "value": 1.7464514999999992,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->+2 单边"
+ },
+ "asym_pm1_A_pct": {
+  "value": 4.371627140886711,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "(冷侧-暖侧)/冷侧，±1 degC"
+ },
+ "asym_pm2_A_pct": {
+  "value": 8.55262245007769,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "(冷侧-暖侧)/冷侧，±2 degC"
+ },
+ "slope_cold1_B_h_per_C": {
+  "value": 1.6372659999999968,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->-1 单边"
+ },
+ "slope_warm1_B_h_per_C": {
+  "value": 1.5665910000000025,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->+1 单边"
+ },
+ "slope_cold2_B_h_per_C": {
+  "value": 1.6743710000000007,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->-2 单边"
+ },
+ "slope_warm2_B_h_per_C": {
+  "value": 1.5329270000000008,
+  "unit": "h/degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "0->+2 单边"
+ },
+ "asym_pm1_B_pct": {
+  "value": 4.316647386557493,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "(冷侧-暖侧)/冷侧，±1 degC"
+ },
+ "asym_pm2_B_pct": {
+  "value": 8.44759016968162,
+  "unit": "%",
+  "source": "boundary_extrapolation.csv",
+  "method": "(冷侧-暖侧)/冷侧，±2 degC"
+ },
+ "C_plat_minus10pct": {
+  "value": 0.04498878688524591,
+  "unit": "kg/kg",
+  "source": "figdata/env_att1.csv",
+  "method": "C_plat*0.9"
+ },
+ "C_plat_plus10pct": {
+  "value": 0.05498629508196722,
+  "unit": "kg/kg",
+  "source": "figdata/env_att1.csv",
+  "method": "C_plat*1.1"
+ },
+ "span_moisture_pm10pct_A_h": {
+  "value": 0.20613581893677946,
+  "unit": "h",
+  "source": "journal_draft/boundary_sensitivity.json",
+  "method": "wetter-drier 极差，A"
+ },
+ "span_moisture_pm10pct_B_h": {
+  "value": 0.22606406406261215,
+  "unit": "h",
+  "source": "journal_draft/boundary_sensitivity.json",
+  "method": "wetter-drier 极差，B"
+ },
+ "window_rows": {
+  "value": [
+   {
+    "scenario": "窗口·末30min",
+    "T_plat_C": 50.013258,
+    "C_plat": 0.04998871,
+    "A_fixed_h": 57.449358,
+    "B_shrinking_h": 51.072931
+   },
+   {
+    "scenario": "窗口·末1h",
+    "T_plat_C": 49.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 57.475473,
+    "B_shrinking_h": 51.095835
+   },
+   {
+    "scenario": "窗口·末2h",
+    "T_plat_C": 49.968504,
+    "C_plat": 0.04986521,
+    "A_fixed_h": 57.528569,
+    "B_shrinking_h": 51.141867
+   },
+   {
+    "scenario": "窗口·末3h",
+    "T_plat_C": 49.66074,
+    "C_plat": 0.04888845,
+    "A_fixed_h": 58.075595,
+    "B_shrinking_h": 51.617525
+   },
+   {
+    "scenario": "窗口·最后一点",
+    "T_plat_C": 50.165,
+    "C_plat": 0.04986,
+    "A_fixed_h": 57.170849,
+    "B_shrinking_h": 50.828032
+   }
+  ],
+  "unit": "-",
+  "source": "boundary_extrapolation.csv",
+  "method": "窗口侧 5 行（表 2 用）"
+ },
+ "temperature_rows": {
+  "value": [
+   {
+    "scenario": "控温-2°C",
+    "T_plat_C": 47.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 61.29505,
+    "B_shrinking_h": 54.444577
+   },
+   {
+    "scenario": "控温-1°C",
+    "T_plat_C": 48.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 59.342398,
+    "B_shrinking_h": 52.733101
+   },
+   {
+    "scenario": "控温+0°C",
+    "T_plat_C": 49.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 57.475473,
+    "B_shrinking_h": 51.095835
+   },
+   {
+    "scenario": "控温+1°C",
+    "T_plat_C": 50.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 55.690163,
+    "B_shrinking_h": 49.529244
+   },
+   {
+    "scenario": "控温+2°C",
+    "T_plat_C": 51.998934,
+    "C_plat": 0.04998754,
+    "A_fixed_h": 53.98257,
+    "B_shrinking_h": 48.029981
+   }
+  ],
+  "unit": "-",
+  "source": "boundary_extrapolation.csv",
+  "method": "控温侧 5 行（表 2 用）"
+ },
+ "record_coverage_A_fixed_pct": {
+  "value": 6.9594903169166935,
+  "unit": "%",
+  "source": "att1 + ablation.json",
+  "method": "4 h 记录 / A_fixed 端点"
+ },
+ "record_coverage_B_shrinking_pct": {
+  "value": 7.828426762697228,
+  "unit": "%",
+  "source": "att1 + ablation.json",
+  "method": "4 h 记录 / B_shrinking 端点"
+ },
+ "extrapolated_share_A_fixed_pct": {
+  "value": 93.0405096830833,
+  "unit": "%",
+  "source": "att1 + ablation.json",
+  "method": "1 - 覆盖率"
+ },
+ "extrapolated_share_B_shrinking_pct": {
+  "value": 92.17157323730277,
+  "unit": "%",
+  "source": "att1 + ablation.json",
+  "method": "1 - 覆盖率"
+ },
+ "v_spec_0_m3kg": {
+  "value": 0.0013157894736842105,
+  "unit": "m3/kg",
+  "source": "physical_consistency.md 口径",
+  "method": "v(0)=1/760"
+ },
+ "v_spec_C0_m3kg": {
+  "value": 0.0035876705406771093,
+  "unit": "m3/kg",
+  "source": "同上",
+  "method": "(1+2.55)/(760+90*2.55)"
+ },
+ "rho_B_C0": {
+  "value": 989.5,
+  "unit": "kg/m3",
+  "source": "题给附录4",
+  "method": "760+90C"
+ },
+ "R_bound_cm": {
+  "value": 1.2112029565383968,
+  "unit": "cm",
+  "source": "重算",
+  "method": "R0*sqrt(v(0)/v(C0))"
+ },
+ "att2_below_bound_count": {
+  "value": 106,
+  "unit": "count",
+  "source": "figdata/radius_att2.csv + 重算",
+  "method": "R_data < R_bound 计数"
+ },
+ "att2_below_bound_first_h": {
+  "value": 19.5,
+  "unit": "h",
+  "source": "figdata/radius_att2.csv",
+  "method": "首次越界时刻"
+ },
+ "V0_m3": {
+  "value": 0.0003141592653589793,
+  "unit": "m3",
+  "source": "重算",
+  "method": "pi*R0^2*L"
+ },
+ "m_dry_initial_kg": {
+  "value": 0.08756636424583382,
+  "unit": "kg",
+  "source": "重算",
+  "method": "rho_B(C0)*V0/(1+C0)"
+ },
+ "shrinklaw_last_t_s": {
+  "value": 183945.0,
+  "unit": "s",
+  "source": "figdata/shrinklaw.csv",
+  "method": "末行 t"
+ },
+ "Cbar_at_td": {
+  "value": 0.118402,
+  "unit": "kg/kg",
+  "source": "figdata/shrinklaw.csv",
+  "method": "末行 Cbar（体积平均口径）"
+ },
+ "R_att2_at_td_cm": {
+  "value": 1.2,
+  "unit": "cm",
+  "source": "figdata/shrinklaw.csv",
+  "method": "末行 R_att2_cm"
+ },
+ "m_dry_endpoint_kg": {
+  "value": 0.07793187115825673,
+  "unit": "kg",
+  "source": "重算",
+  "method": "rho_B(Cbar)*pi*R^2*L/(1+Cbar)"
+ },
+ "m_dry_ratio": {
+  "value": 0.8899749559028257,
+  "unit": "-",
+  "source": "重算",
+  "method": "端点/初始"
+ },
+ "m_dry_loss_pct": {
+  "value": 11.002504409717428,
+  "unit": "%",
+  "source": "重算",
+  "method": "1-ratio"
+ },
+ "R_bound_first_datarow_h": {
+  "value": 19.5,
+  "unit": "h",
+  "source": "figdata/radius_att2.csv",
+  "method": "首个 R_data < R_bound 的数据行时刻"
+ },
+ "R_bound_first_interp_h": {
+  "value": 19.398521730801615,
+  "unit": "h",
+  "source": "figdata/radius_att2.csv",
+  "method": "分段线性插值下穿时刻（= 求解器实际用的口径）"
+ },
+ "dynfrz_common_rows": {
+  "value": 288,
+  "unit": "count",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "dyn/frz 共同时刻行数"
+ },
+ "cross_dynfrz_surf_h": {
+  "value": 5.6987087011402044,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "C_surf(dyn)-C_surf(frz) 首次变号，线性插值"
+ },
+ "cross_dynfrz_center_h": {
+  "value": 15.88079459815983,
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "C_center(dyn)-C_center(frz) 首次变号，线性插值"
+ },
+ "dynfrz_trace_span_h": {
+  "value": [
+   0.166666667,
+   48.0
+  ],
+  "unit": "h",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "轨迹时间跨度"
+ },
+ "dynfrz_dCcenter_pct_at": {
+  "value": [
+   {
+    "t_h": 1.0,
+    "C_center_dyn": 2.5257123559765606,
+    "C_center_frz": 2.5424863181447472,
+    "dC_pct": 0.6641279688280654
+   },
+   {
+    "t_h": 3.0,
+    "C_center_dyn": 1.766189145737773,
+    "C_center_frz": 2.1642401449817203,
+    "dC_pct": 22.53728034760815
+   },
+   {
+    "t_h": 6.0,
+    "C_center_dyn": 1.0169828911527237,
+    "C_center_frz": 1.409198712531161,
+    "dC_pct": 38.56660960479589
+   },
+   {
+    "t_h": 12.0,
+    "C_center_dyn": 0.4561575078192883,
+    "C_center_frz": 0.5783315220777987,
+    "dC_pct": 26.783295717870967
+   },
+   {
+    "t_h": 24.0,
+    "C_center_dyn": 0.2377957567279404,
+    "C_center_frz": 0.12938699654203512,
+    "dC_pct": -45.589022141355784
+   },
+   {
+    "t_h": 48.0,
+    "C_center_dyn": 0.16181334324950591,
+    "C_center_frz": 0.05178063813061669,
+    "dC_pct": -67.99977239777178
+   }
+  ],
+  "unit": "%",
+  "source": "figdata/q2_frozen_trace.csv",
+  "method": "(frz-dyn)/dyn*100，用于与 q2_frozen.csv 对照"
+ },
+ "q2_frozen_archived": {
+  "value": [
+   {
+    "t_h": 1.0,
+    "C_center_dyn": 2.5257123559765606,
+    "C_center_frz": 2.5424863181447472,
+    "dC_center_pct": 0.6641279688280654,
+    "C_surf_dyn": 1.4711169566742728,
+    "C_surf_frz": 1.3323225312741842,
+    "T_center_dyn_C": 40.38157616554611,
+    "T_center_frz_C": 40.0730290260276
+   },
+   {
+    "t_h": 2.0,
+    "C_center_dyn": 2.17084647293369,
+    "C_center_frz": 2.4123575236897374,
+    "dC_center_pct": 11.125201794195444,
+    "C_surf_dyn": 1.2310989966427255,
+    "C_surf_frz": 1.0442778985151842,
+    "T_center_dyn_C": 48.44997182485315,
+    "T_center_frz_C": 48.11917975346154
+   },
+   {
+    "t_h": 3.0,
+    "C_center_dyn": 1.766189145737773,
+    "C_center_frz": 2.1642401449817203,
+    "dC_center_pct": 22.53728034760815,
+    "C_surf_dyn": 1.0081292427189008,
+    "C_surf_frz": 0.865502837946299,
+    "T_center_dyn_C": 49.8494626231265,
+    "T_center_frz_C": 49.735061791645705
+   },
+   {
+    "t_h": 6.0,
+    "C_center_dyn": 1.0169828911527237,
+    "C_center_frz": 1.409198712531161,
+    "dC_center_pct": 38.56660960479589,
+    "C_surf_dyn": 0.5327882679614918,
+    "C_surf_frz": 0.5433753719307899,
+    "T_center_dyn_C": 49.99891857656752,
+    "T_center_frz_C": 49.998494713393484
+   },
+   {
+    "t_h": 12.0,
+    "C_center_dyn": 0.4561575078192883,
+    "C_center_frz": 0.5783315220777987,
+    "dC_center_pct": 26.783295717870967,
+    "C_surf_dyn": 0.16418314919196456,
+    "C_surf_frz": 0.24077157306138244,
+    "T_center_dyn_C": 49.9989344262122,
+    "T_center_frz_C": 49.99893443155929
+   },
+   {
+    "t_h": 24.0,
+    "C_center_dyn": 0.2377957567279404,
+    "C_center_frz": 0.12938699654203512,
+    "dC_center_pct": -45.589022141355784,
+    "C_surf_dyn": 0.06647055339142983,
+    "C_surf_frz": 0.07865756916917192,
+    "T_center_dyn_C": 49.99893442623477,
+    "T_center_frz_C": 49.998934432459805
+   },
+   {
+    "t_h": 48.0,
+    "C_center_dyn": 0.16181334324950591,
+    "C_center_frz": 0.05178063813061669,
+    "dC_center_pct": -67.99977239777178,
+    "C_surf_dyn": 0.05372098669614381,
+    "C_surf_frz": 0.050635003177313176,
+    "T_center_dyn_C": 49.99893442621925,
+    "T_center_frz_C": 49.998934432459805
+   }
+  ],
+  "unit": "-",
+  "source": "figdata/q2_frozen.csv",
+  "method": "归档粗表，用于对照"
+ },
+ "selfclosed": {
+  "value": {
+   "case": 4,
+   "Nc": 1600,
+   "dt": 7.5,
+   "Ccr": 0.15,
+   "t_d_h": 61.401643,
+   "t_d_s": 221045.9143,
+   "R_closed_end_cm": 1.27198,
+   "R_att2_end_cm": 1.199,
+   "dev_end_pct": -6.0869,
+   "dev_min_pct": -23.5279,
+   "dev_max_pct": -0.6103,
+   "Cbar_end": 0.118394
+  },
+  "unit": "-",
+  "source": "figdata/shrinkclosed_summary.json",
+  "method": "原样"
+ },
+ "selfclosed_vs_att2_end_pct": {
+  "value": -6.0869,
+  "unit": "%",
+  "source": "shrinkclosed_summary.json",
+  "method": "dev_end_pct"
+ },
+ "shrinkclosed_rows": {
+  "value": 737,
+  "unit": "count",
+  "source": "figdata/shrinkclosed.csv",
+  "method": "len"
+ },
+ "shrinkclosed_last": {
+  "value": {
+   "t_s": 221045.9,
+   "t_h": 61.4016,
+   "R_closed_cm": 1.27198,
+   "R_att2_cm": 1.199,
+   "dev_pct": -6.0869,
+   "Cbar": 0.118394
+  },
+  "unit": "-",
+  "source": "figdata/shrinkclosed.csv",
+  "method": "末行（= 自洽闭合端点）"
+ },
+ "shrinkclosed_dev_min_pct": {
+  "value": -23.5279,
+  "unit": "%",
+  "source": "figdata/shrinkclosed.csv",
+  "method": "min(dev_pct)"
+ },
+ "shrinkclosed_dev_max_pct": {
+  "value": -0.6103,
+  "unit": "%",
+  "source": "figdata/shrinkclosed.csv",
+  "method": "max(dev_pct)"
+ },
+ "shrinkclosed_dev_span_pct": {
+  "value": 22.9176,
+  "unit": "%",
+  "source": "figdata/shrinkclosed.csv",
+  "method": "极差"
+ },
+ "R_att2_at_selfclosed_td_cm": {
+  "value": 1.199,
+  "unit": "cm",
+  "source": "figdata/radius_att2.csv 插值",
+  "method": "在 t=61.4016 h 处插值"
+ },
+ "radius_fit": {
+  "value": {
+   "form": "R(t) = a + b*exp(-t/tau) [cm]",
+   "a": 1.2013706659413863,
+   "b": 0.7583912462231677,
+   "tau_s": 14447.602038506278,
+   "sd": [
+    0.0005923536119830411,
+    0.003944379999944639,
+    120.66112338655127
+   ],
+   "T_plat_C": 49.998934426229496,
+   "C_plat_kgkg": 0.049987540983606554,
+   "att1_end_s": 14400.0,
+   "att2_end_s": 259200.0
+  },
+  "unit": "-",
+  "source": "figdata/radius_fit.json",
+  "method": "原样"
+ },
+ "param_sensitivity": {
+  "value": [
+   {
+    "question": "q3",
+    "param": "base",
+    "delta_pct": 0.0,
+    "td_h": 57.4755,
+    "S_p": null
+   },
+   {
+    "question": "q3",
+    "param": "D",
+    "delta_pct": -5.0,
+    "td_h": 60.1518,
+    "S_p": null
+   },
+   {
+    "question": "q3",
+    "param": "D",
+    "delta_pct": 5.0,
+    "td_h": 55.0598,
+    "S_p": -0.8838
+   },
+   {
+    "question": "q3",
+    "param": "hm",
+    "delta_pct": -5.0,
+    "td_h": 57.8204,
+    "S_p": null
+   },
+   {
+    "question": "q3",
+    "param": "hm",
+    "delta_pct": 5.0,
+    "td_h": 57.1699,
+    "S_p": -0.113
+   },
+   {
+    "question": "q3",
+    "param": "h",
+    "delta_pct": -5.0,
+    "td_h": 57.4796,
+    "S_p": null
+   },
+   {
+    "question": "q3",
+    "param": "h",
+    "delta_pct": 5.0,
+    "td_h": 57.4717,
+    "S_p": -0.0014
+   },
+   {
+    "question": "q4",
+    "param": "base",
+    "delta_pct": 0.0,
+    "td_h": 51.0958,
+    "S_p": null
+   },
+   {
+    "question": "q4",
+    "param": "D",
+    "delta_pct": -5.0,
+    "td_h": 53.4624,
+    "S_p": null
+   },
+   {
+    "question": "q4",
+    "param": "D",
+    "delta_pct": 5.0,
+    "td_h": 48.9575,
+    "S_p": -0.8795
+   },
+   {
+    "question": "q4",
+    "param": "hm",
+    "delta_pct": -5.0,
+    "td_h": 51.231,
+    "S_p": null
+   },
+   {
+    "question": "q4",
+    "param": "hm",
+    "delta_pct": 5.0,
+    "td_h": 50.9781,
+    "S_p": -0.0494
+   },
+   {
+    "question": "q4",
+    "param": "h",
+    "delta_pct": -5.0,
+    "td_h": 51.0996,
+    "S_p": null
+   },
+   {
+    "question": "q4",
+    "param": "h",
+    "delta_pct": 5.0,
+    "td_h": 51.0924,
+    "S_p": -0.0014
+   },
+   {
+    "question": "q4",
+    "param": "lam",
+    "delta_pct": -5.0,
+    "td_h": 54.0346,
+    "S_p": null
+   },
+   {
+    "question": "q4",
+    "param": "lam",
+    "delta_pct": 5.0,
+    "td_h": 48.2638,
+    "S_p": -1.1285
+   }
+  ],
+  "unit": "h / -",
+  "source": "figdata/sensitivity.csv",
+  "method": "原样"
+ },
+ "monte_carlo": {
+  "value": {
+   "N": 16,
+   "seed": 20260912,
+   "dist": "U(0.95,1.05)",
+   "Nc": 1600,
+   "dt": 7.5,
+   "Ccr": 0.15,
+   "params": [
+    "D",
+    "h",
+    "hm",
+    "lam"
+   ],
+   "result": {
+    "q3": {
+     "label": "问题三（固定域）",
+     "n": 16,
+     "mean_h": 56.9374,
+     "sd_h": 1.3172,
+     "median_h": 56.6331,
+     "min_h": 55.3043,
+     "max_h": 59.9099,
+     "ci95_h": [
+      55.3649,
+      59.4473
+     ],
+     "ci90_h": [
+      55.4256,
+      58.9848
+     ],
+     "w95_h": 4.0824,
+     "rel_w95_pct": 7.2085
+    },
+    "q4": {
+     "label": "问题四（收缩域）",
+     "n": 16,
+     "mean_h": 50.9387,
+     "sd_h": 1.7887,
+     "median_h": 50.8933,
+     "min_h": 47.4805,
+     "max_h": 54.7489,
+     "ci95_h": [
+      48.0779,
+      54.2369
+     ],
+     "ci90_h": [
+      48.6752,
+      53.7248
+     ],
+     "w95_h": 6.159,
+     "rel_w95_pct": 12.1018
+    }
+   }
+  },
+  "unit": "-",
+  "source": "figdata/mc_sensitivity_summary.json",
+  "method": "原样"
+ },
+ "kappa_crit": {
+  "value": 3.000747727302541,
+  "unit": "-",
+  "source": "figdata/figdata_summary.json",
+  "method": "kap.kappa_crit"
+ },
+ "kappa_td_first_last_h": {
+  "value": [
+   56.75236482044569,
+   170.0845203927581
+  ],
+  "unit": "h",
+  "source": "figdata/figdata_summary.json",
+  "method": "kappa=0 与 kappa=2.995"
+ },
+ "grid_q1": {
+  "value": {
+   "Nc": 800,
+   "dt_internal": 0.05,
+   "t_d_h": null,
+   "t_d_s": null,
+   "R_end_cm": null
+  },
+  "unit": "-",
+  "source": "问题1/results/q1_summary.json",
+  "method": "原样键"
+ },
+ "grid_q2": {
+  "value": {
+   "Nc": 800,
+   "dt_internal": 0.5,
+   "t_d_h": null,
+   "t_d_s": null,
+   "R_end_cm": null
+  },
+  "unit": "-",
+  "source": "问题2/results/q2_summary.json",
+  "method": "原样键"
+ },
+ "grid_q3": {
+  "value": {
+   "Nc": 1600,
+   "dt_internal": 7.5,
+   "Ccr": 0.15,
+   "t_d_h": 57.475473,
+   "t_d_s": 206911.7039,
+   "R_end_cm": null
+  },
+  "unit": "-",
+  "source": "问题3/results/q3_summary.json",
+  "method": "原样键"
+ },
+ "grid_q4": {
+  "value": {
+   "Nc": 1600,
+   "dt_internal": 7.5,
+   "Ccr": 0.15,
+   "t_d_h": 51.095835,
+   "t_d_s": 183945.005,
+   "R_end_cm": 1.2
+  },
+  "unit": "-",
+  "source": "问题4/results/q4_summary.json",
+  "method": "原样键"
+ },
+ "floor_fit_nc": {
+  "value": [
+   25,
+   50,
+   100,
+   200,
+   400,
+   800,
+   1600
+  ],
+  "unit": "-",
+  "source": "figdata/cand_surface.csv",
+  "method": "曲面网格的空间档"
+ },
+ "floor_fit_p": {
+  "value": [
+   0.9999949444444444,
+   0.9999847222222221,
+   1.0006517222222222,
+   1.0000613888888887,
+   1.0000115555555555,
+   0.9999859999999999,
+   0.9999821666666665
+  ],
+  "unit": "-",
+  "source": "figdata/cand_surface.csv",
+  "method": "err=F+C*dt^p：p 一维扫描 + 内层 (F,C) 闭式最小二乘（_floor_fit）"
+ },
+ "floor_fit_p_min": {
+  "value": 0.9999821666666665,
+  "unit": "-",
+  "source": "figdata/cand_surface.csv",
+  "method": "min(p)"
+ },
+ "floor_fit_p_max": {
+  "value": 1.0006517222222222,
+  "unit": "-",
+  "source": "figdata/cand_surface.csv",
+  "method": "max(p)"
+ },
+ "floor_fit_C_mean": {
+  "value": 1.8713446782005515e-05,
+  "unit": "kg/kg",
+  "source": "figdata/cand_surface.csv",
+  "method": "mean(C)"
+ },
+ "floor_fit_C_spread_pct": {
+  "value": 0.29879132297127964,
+  "unit": "%",
+  "source": "figdata/cand_surface.csv",
+  "method": "(max(C)-min(C))/mean(C)"
+ },
+ "floor_fit_F": {
+  "value": [
+   0.0029148402541448845,
+   0.0007274000228696154,
+   0.00018170475621732079,
+   4.542171936121496e-05,
+   1.1355255975494128e-05,
+   2.8382011213586045e-06,
+   7.093119020464427e-07
+  ],
+  "unit": "kg/kg",
+  "source": "figdata/cand_surface.csv",
+  "method": "各 Nc 的地板"
+ },
+ "floor_fit_F_ratio": {
+  "value": [
+   4.007203962746317,
+   4.003197483722646,
+   4.000393617254309,
+   4.000061245580016,
+   4.000863747830012,
+   4.001344279110618
+  ],
+  "unit": "-",
+  "source": "figdata/cand_surface.csv",
+  "method": "逐次 F(Nc)/F(2Nc)，空间二阶应趋 4"
+ },
+ "floor_fit_dt_star_s": {
+  "value": [
+   155.57778750275745,
+   38.84221786110602,
+   9.712758246240163,
+   2.4274326364072127,
+   0.6068467551425814,
+   0.15166245619747634,
+   0.0379014091641717
+  ],
+  "unit": "s",
+  "source": "figdata/cand_surface.csv",
+  "method": "(F/C)^(1/p)：时间误差与空间地板相等处"
+ },
+ "closure_gate_passed": {
+  "value": true,
+  "unit": "bool",
+  "source": "thermal_science/data/strict_closure_summary.json",
+  "method": "装置自校验（须 True）"
+ },
+ "closure_case": {
+  "value": 4,
+  "unit": "-",
+  "source": "strict_closure_summary.json",
+  "method": "原样"
+ },
+ "closure_Nc": {
+  "value": 1600,
+  "unit": "-",
+  "source": "strict_closure_summary.json",
+  "method": "原样"
+ },
+ "closure_dt_s": {
+  "value": 7.5,
+  "unit": "s",
+  "source": "strict_closure_summary.json",
+  "method": "原样"
+ },
+ "closure_piter": {
+  "value": 3,
+  "unit": "-",
+  "source": "strict_closure_summary.json",
+  "method": "半径-场不动点迭代次数"
+ },
+ "closure_v0_m3kg": {
+  "value": 0.0035876705406771093,
+  "unit": "m3/kg",
+  "source": "strict_closure_summary.json",
+  "method": "v(C0)=(1+C0)/rho_B(C0)"
+ },
+ "closure_td_meanv_h": {
+  "value": 61.401642858146644,
+  "unit": "h",
+  "source": "strict_closure_summary.json",
+  "method": "mean_v: R=R0*sqrt(<v>/v0)；strict: R=R0/sqrt(v0*sum(w_i/v_i))"
+ },
+ "closure_td_meanv_s": {
+  "value": 221045.91428932792,
+  "unit": "s",
+  "source": "strict_closure_summary.json",
+  "method": "原样"
+ },
+ "closure_dev_end_meanv_pct": {
+  "value": -6.086924570786044,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "(R_att2-R_closed)/R_att2*100，负号表示自洽半径大于制表值"
+ },
+ "closure_dev_min_meanv_pct": {
+  "value": -23.527938962959066,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "min(dev_pct)"
+ },
+ "closure_dev_max_meanv_pct": {
+  "value": -0.6103385459685242,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "max(dev_pct)"
+ },
+ "closure_excess_min_meanv_pct": {
+  "value": 0.6103385459685242,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_max_pct（自洽半径超出制表值的下界）"
+ },
+ "closure_excess_max_meanv_pct": {
+  "value": 23.527938962959066,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_min_pct（超出量的上界）"
+ },
+ "closure_excess_end_meanv_pct": {
+  "value": 6.086924570786044,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_end_pct（端点处超出量）"
+ },
+ "closure_Cbar_end_meanv": {
+  "value": 0.11839429165200123,
+  "unit": "kg/kg",
+  "source": "strict_closure_summary.json",
+  "method": "端点体积平均含水率"
+ },
+ "closure_R_closed_end_meanv_cm": {
+  "value": 1.2719822256037248,
+  "unit": "cm",
+  "source": "strict_closure_summary.json",
+  "method": "自洽半径在端点的值"
+ },
+ "closure_eps_m_max_meanv": {
+  "value": 0.02745831218430972,
+  "unit": "-",
+  "source": "strict_closure_summary.json",
+  "method": "干质量漂移 max|m_d(t)/m_d(0)-1|"
+ },
+ "closure_td_strict_h": {
+  "value": 61.08177231618455,
+  "unit": "h",
+  "source": "strict_closure_summary.json",
+  "method": "mean_v: R=R0*sqrt(<v>/v0)；strict: R=R0/sqrt(v0*sum(w_i/v_i))"
+ },
+ "closure_td_strict_s": {
+  "value": 219894.38033826437,
+  "unit": "s",
+  "source": "strict_closure_summary.json",
+  "method": "原样"
+ },
+ "closure_dev_end_strict_pct": {
+  "value": -6.070427232293241,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "(R_att2-R_closed)/R_att2*100，负号表示自洽半径大于制表值"
+ },
+ "closure_dev_min_strict_pct": {
+  "value": -21.79090668036798,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "min(dev_pct)"
+ },
+ "closure_dev_max_strict_pct": {
+  "value": -0.5619812367306583,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "max(dev_pct)"
+ },
+ "closure_excess_min_strict_pct": {
+  "value": 0.5619812367306583,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_max_pct（自洽半径超出制表值的下界）"
+ },
+ "closure_excess_max_strict_pct": {
+  "value": 21.79090668036798,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_min_pct（超出量的上界）"
+ },
+ "closure_excess_end_strict_pct": {
+  "value": 6.070427232293241,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "-dev_end_pct（端点处超出量）"
+ },
+ "closure_Cbar_end_strict": {
+  "value": 0.11839431548951701,
+  "unit": "kg/kg",
+  "source": "strict_closure_summary.json",
+  "method": "端点体积平均含水率"
+ },
+ "closure_R_closed_end_strict_cm": {
+  "value": 1.271784422515196,
+  "unit": "cm",
+  "source": "strict_closure_summary.json",
+  "method": "自洽半径在端点的值"
+ },
+ "closure_eps_m_max_strict": {
+  "value": 6.661338147750939e-16,
+  "unit": "-",
+  "source": "strict_closure_summary.json",
+  "method": "干质量漂移 max|m_d(t)/m_d(0)-1|"
+ },
+ "closure_delta_td_h": {
+  "value": -0.3198705419620964,
+  "unit": "h",
+  "source": "strict_closure_summary.json",
+  "method": "strict - mean_v"
+ },
+ "closure_delta_td_pct": {
+  "value": -0.5209478559084824,
+  "unit": "%",
+  "source": "strict_closure_summary.json",
+  "method": "(strict/mean_v - 1)*100：两口径之间的差"
+ },
+ "closure_base_td_h": {
+  "value": 51.09583472199245,
+  "unit": "h",
+  "source": "figdata/ablation.json",
+  "method": "B_shrinking 规定收缩端点，位移基准"
+ },
+ "closure_shift_meanv_h": {
+  "value": 10.305808136154191,
+  "unit": "h",
+  "source": "重算 vs ablation.json",
+  "method": "mean_v 端点 - 基准"
+ },
+ "closure_shift_meanv_pct": {
+  "value": 20.169566056073077,
+  "unit": "%",
+  "source": "重算 vs ablation.json",
+  "method": "相对基准；勿与 closure_excess_* 混用"
+ },
+ "closure_shift_strict_h": {
+  "value": 9.985937594192094,
+  "unit": "h",
+  "source": "重算 vs ablation.json",
+  "method": "strict 端点 - 基准"
+ },
+ "closure_shift_strict_pct": {
+  "value": 19.54354527824944,
+  "unit": "%",
+  "source": "重算 vs ablation.json",
+  "method": "相对基准"
+ },
+ "closure_md_initial_kg": {
+  "value": 0.08756636424583382,
+  "unit": "kg",
+  "source": "重算",
+  "method": "rho_B(C0)*pi*R0^2*L/(1+C0)"
+ },
+ "ens_gate_passed": {
+  "value": true,
+  "unit": "bool",
+  "source": "thermal_science/data/mc_ensemble_summary.json",
+  "method": "装置自校验（须 True）"
+ },
+ "ens_N": {
+  "value": 512,
+  "unit": "count",
+  "source": "mc_ensemble_summary.json",
+  "method": "每配置成员数"
+ },
+ "ens_seed": {
+  "value": 20260912,
+  "unit": "-",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_dist": {
+  "value": "U(0.95,1.05)",
+  "unit": "-",
+  "source": "mc_ensemble_summary.json",
+  "method": "均匀分布，人为扰动带"
+ },
+ "ens_gate_n": {
+  "value": 16,
+  "unit": "count",
+  "source": "mc_ensemble_summary.json",
+  "method": "门禁样本数（= 已发表的 16 成员）"
+ },
+ "ens_gate_maxdev_h": {
+  "value": 4.945107079379341e-07,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "前缀逐位复现已发表值的最大偏差"
+ },
+ "ens_q3_mean_h": {
+  "value": 57.551,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_sd_h": {
+  "value": 1.4704,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_median_h": {
+  "value": 57.5438,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_min_h": {
+  "value": 54.8557,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_max_h": {
+  "value": 60.4183,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_q025_h": {
+  "value": 55.2136,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_q975_h": {
+  "value": 60.0765,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_q05_h": {
+  "value": 55.3382,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_q95_h": {
+  "value": 59.9072,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_w95_h": {
+  "value": 4.8629,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q3_rel_w95_pct": {
+  "value": 8.4508,
+  "unit": "%",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_mean_h": {
+  "value": 51.1625,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_sd_h": {
+  "value": 2.1756,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_median_h": {
+  "value": 51.0774,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_min_h": {
+  "value": 46.4682,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_max_h": {
+  "value": 56.1855,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_q025_h": {
+  "value": 47.3532,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_q975_h": {
+  "value": 55.2111,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_q05_h": {
+  "value": 47.7601,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_q95_h": {
+  "value": 54.7835,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_w95_h": {
+  "value": 7.8578,
+  "unit": "h",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_q4_rel_w95_pct": {
+  "value": 15.3841,
+  "unit": "%",
+  "source": "mc_ensemble_summary.json",
+  "method": "原样"
+ },
+ "ens_n_missing_endpoint": {
+  "value": {
+   "q3": 0,
+   "q4": 0
+  },
+  "unit": "count",
+  "source": "mc_ensemble_summary.json",
+  "method": "未达阈的成员数，须为 0"
+ },
+ "ens16_rel_w95_q3_pct": {
+  "value": 7.2085,
+  "unit": "%",
+  "source": "figdata/mc_sensitivity_summary.json",
+  "method": "原样"
+ },
+ "ens16_rel_w95_q4_pct": {
+  "value": 12.1018,
+  "unit": "%",
+  "source": "figdata/mc_sensitivity_summary.json",
+  "method": "原样"
+ },
+ "ens_rel_w95_widen_factor": {
+  "value": {
+   "q3": 1.1723382118332524,
+   "q4": 1.2712241154208463
+  },
+  "unit": "-",
+  "source": "重算",
+  "method": "512 成员相对宽度 / 16 成员相对宽度"
+ },
+ "morris_levels": {
+  "value": 8,
+  "unit": "-",
+  "source": "thermal_science/data/morris_screen_summary.json",
+  "method": "原样"
+ },
+ "morris_trajectories": {
+  "value": 10,
+  "unit": "count",
+  "source": "morris_screen_summary.json",
+  "method": "每配置轨迹数"
+ },
+ "morris_band": {
+  "value": 0.05,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "乘性参数的相对半宽"
+ },
+ "morris_dt_range_C": {
+  "value": 1.0,
+  "unit": "degC",
+  "source": "morris_screen_summary.json",
+  "method": "T∞ 的绝对半宽（不能乘性缩放：env 里是开尔文）"
+ },
+ "morris_seed": {
+  "value": 20260921,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "原样"
+ },
+ "morris_step_rel": {
+  "value": 0.05714285714285715,
+  "unit": "-",
+  "source": "morris_screen.py 口径",
+  "method": "乘性参数的单个基本步长 Δp/p"
+ },
+ "morris_A_k": {
+  "value": 5,
+  "unit": "count",
+  "source": "morris_screen_summary.json",
+  "method": "该配置参数个数"
+ },
+ "morris_A_n_runs": {
+  "value": 60,
+  "unit": "count",
+  "source": "morris_screen_summary.json",
+  "method": "trajectories*(k+1)"
+ },
+ "morris_A_ref_td_h": {
+  "value": 57.47547331558247,
+  "unit": "h",
+  "source": "morris_screen_summary.json",
+  "method": "该配置的参考端点（未扰动）"
+ },
+ "morris_A_C_mu_star": {
+  "value": 0.017872279675091928,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_A_C_sigma": {
+  "value": 0.0013785511585839125,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_A_C_ratio": {
+  "value": 0.07713348177430095,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_A_D_mu_star": {
+  "value": 0.8823016750702584,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_A_D_sigma": {
+  "value": 0.040078093087088096,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_A_D_ratio": {
+  "value": 0.04542447806629932,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_A_T_mu_star": {
+  "value": 1.8329119944673642,
+  "unit": "h/degC",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_A_T_sigma": {
+  "value": 0.06905323791501682,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_A_T_ratio": {
+  "value": 0.037674060796946976,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_A_h_mu_star": {
+  "value": 0.0013918958947664794,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_A_h_sigma": {
+  "value": 7.333984291902009e-05,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_A_h_ratio": {
+  "value": 0.052690609401735776,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_A_hm_mu_star": {
+  "value": 0.1128398552265381,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_A_hm_sigma": {
+  "value": 0.0062468850242366645,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_A_hm_ratio": {
+  "value": 0.05536062601015726,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_k": {
+  "value": 6,
+  "unit": "count",
+  "source": "morris_screen_summary.json",
+  "method": "该配置参数个数"
+ },
+ "morris_B_n_runs": {
+  "value": 70,
+  "unit": "count",
+  "source": "morris_screen_summary.json",
+  "method": "trajectories*(k+1)"
+ },
+ "morris_B_ref_td_h": {
+  "value": 51.09583472199245,
+  "unit": "h",
+  "source": "morris_screen_summary.json",
+  "method": "该配置的参考端点（未扰动）"
+ },
+ "morris_B_C_mu_star": {
+  "value": 0.021708250524405826,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_C_sigma": {
+  "value": 0.0008833290877506645,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_C_ratio": {
+  "value": 0.040690938533142894,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_D_mu_star": {
+  "value": 0.8933379162096596,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_D_sigma": {
+  "value": 0.04506458767973075,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_D_ratio": {
+  "value": 0.05044517518178914,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_T_mu_star": {
+  "value": 1.6471086888218534,
+  "unit": "h/degC",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_T_sigma": {
+  "value": 0.09881992870738171,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_T_ratio": {
+  "value": 0.059995997457864055,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_h_mu_star": {
+  "value": 0.0013977033785751098,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_h_sigma": {
+  "value": 5.667742523715396e-05,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_h_ratio": {
+  "value": 0.04055039581784071,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_hm_mu_star": {
+  "value": 0.05116750951683582,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_hm_sigma": {
+  "value": 0.002816050152422205,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_hm_ratio": {
+  "value": 0.055035904209792166,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_B_lam_mu_star": {
+  "value": 1.0895026598167707,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "|EE| 均值；乘性参数为 S 等效量"
+ },
+ "morris_B_lam_sigma": {
+  "value": 0.04038097503942297,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "EE 标准差 ddof=1"
+ },
+ "morris_B_lam_ratio": {
+  "value": 0.03706367733532116,
+  "unit": "-",
+  "source": "morris_screen_summary.json",
+  "method": "sigma/mu_star"
+ },
+ "morris_total_runs": {
+  "value": 130,
+  "unit": "count",
+  "source": "重算",
+  "method": "n_runs_A + n_runs_B，正文的 130"
+ },
+ "morris_max_ratio": {
+  "value": 0.07713348177430095,
+  "unit": "-",
+  "source": "重算",
+  "method": "max(sigma/mu_star)；正文的'不超过 7.7%'"
+ },
+ "morris_A_C_band_span_h": {
+  "value": 0.1028075034651867,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_A_D_band_span_h": {
+  "value": 5.075302880557628,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_A_T_band_span_h": {
+  "value": 3.6658239889347284,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*2*dT_range"
+ },
+ "morris_A_h_band_span_h": {
+  "value": 0.008006664209928103,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_A_hm_band_span_h": {
+  "value": 0.649093681282369,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_B_C_band_span_h": {
+  "value": 0.11101269041982582,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_B_D_band_span_h": {
+  "value": 4.568394188236394,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_B_T_band_span_h": {
+  "value": 3.2942173776437067,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*2*dT_range"
+ },
+ "morris_B_h_band_span_h": {
+  "value": 0.007147642427014518,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_B_hm_band_span_h": {
+  "value": 0.2616628588821512,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "morris_B_lam_band_span_h": {
+  "value": 5.571550841917808,
+  "unit": "h",
+  "source": "重算",
+  "method": "mu_star*ln(1.05/0.95)*ref_td_h"
+ },
+ "T0_C": {
+  "value": 28.0,
+  "unit": "degC",
+  "source": "题给",
+  "method": "初始温度"
+ },
+ "C0_kgkg": {
+  "value": 2.55,
+  "unit": "kg/kg",
+  "source": "题给",
+  "method": "初始干基含水率"
+ },
+ "R0_cm": {
+  "value": 2.0,
+  "unit": "cm",
+  "source": "题给",
+  "method": "初始半径"
+ },
+ "L_m": {
+  "value": 0.25,
+  "unit": "m",
+  "source": "题给",
+  "method": "圆柱长度"
+ },
+ "h_W_m2K": {
+  "value": 25.0,
+  "unit": "W/m2/K",
+  "source": "题给",
+  "method": "表面对流传热系数，两套物性共用"
+ },
+ "hm_m_s": {
+  "value": 8e-07,
+  "unit": "m/s",
+  "source": "题给",
+  "method": "表面传质系数，两套物性共用"
+ },
+ "radius_fit_a_cm": {
+  "value": 1.2013706659413863,
+  "unit": "cm",
+  "source": "figdata/radius_fit.json",
+  "method": "R=a+b*exp(-t/tau)"
+ },
+ "radius_fit_b_cm": {
+  "value": 0.7583912462231677,
+  "unit": "cm",
+  "source": "figdata/radius_fit.json",
+  "method": "同上"
+ },
+ "radius_fit_tau_s": {
+  "value": 14447.602038506278,
+  "unit": "s",
+  "source": "figdata/radius_fit.json",
+  "method": "同上"
+ },
+ "radius_fit_sd_cm": {
+  "value": [
+   0.0005923536119830411,
+   0.003944379999944639
+  ],
+  "unit": "cm",
+  "source": "figdata/radius_fit.json",
+  "method": "a、b 的标准误"
+ },
+ "radius_fit_sd_tau_s": {
+  "value": 120.66112338655127,
+  "unit": "s",
+  "source": "figdata/radius_fit.json",
+  "method": "tau 的标准误"
+ },
+ "grid_G_first": {
+  "value": 0.439563,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=200"
+ },
+ "grid_G_last": {
+  "value": 0.439279,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=1600"
+ },
+ "grid_P_first": {
+  "value": 2.26031,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=200"
+ },
+ "grid_P_last": {
+  "value": 2.25921,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=1600"
+ },
+ "grid_I_first": {
+  "value": 0.895538,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=200"
+ },
+ "grid_I_last": {
+  "value": 0.89579,
+  "unit": "-",
+  "source": "figdata/ablation_grid.csv",
+  "method": "Nc=1600"
+ },
+ "window_T_span_C": {
+  "value": 0.5042600000000022,
+  "unit": "degC",
+  "source": "boundary_extrapolation.csv",
+  "method": "5 个窗口 T_plat 的 max-min"
+ },
+ "cand_surface_n_runs": {
+  "value": 42,
+  "unit": "count",
+  "source": "figdata/cand_surface.csv",
+  "method": "双向加密算例数，正文的 42"
+ },
+ "cross_gap_at_01737_s": {
+  "value": 22.079262419140377,
+  "unit": "s",
+  "source": "重算",
+  "method": "|B-A|*3600，由 threshold_scan 同一对值算出"
+ },
+ "cross_gap_at_01737_earlier": {
+  "value": "A",
+  "unit": "-",
+  "source": "重算",
+  "method": "t_A<t_B 则 A 更早；正文表 2 的 Ordering 列须与此一致"
+ },
+ "frozen_center_3h_kgkg": {
+  "value": 2.1642401449817203,
+  "unit": "kg/kg",
+  "source": "figdata/q2_frozen.csv",
+  "method": "t=3 h 行的 C_center_frz"
+ },
+ "frozen_center_gap_3h_pct": {
+  "value": 22.53728034760815,
+  "unit": "%",
+  "source": "重算",
+  "method": "(frz-dyn)/dyn"
+ },
+ "released_frz_3h_pct": {
+  "value": 15.127837451697234,
+  "unit": "%",
+  "source": "重算",
+  "method": "(C0-C_frz)/C0"
+ },
+ "released_dyn_3h_pct": {
+  "value": 30.737680559303016,
+  "unit": "%",
+  "source": "重算",
+  "method": "(C0-C_dyn)/C0"
+ },
+ "released_ratio_3h": {
+  "value": 2.031862165193642,
+  "unit": "-",
+  "source": "重算",
+  "method": "已释放量之比（正文的 2.03）"
+ },
+ "T_band_last1h_C": {
+  "value": 0.4789999999999992,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "t in [3,4] h 的 max-min"
+ },
+ "T_band_last2h_C": {
+  "value": 0.6340000000000003,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "t in [2,4] h 的 max-min"
+ },
+ "T_band_last3h_C": {
+  "value": 2.761000000000003,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "t in [1,4] h 的 max-min"
+ },
+ "T_net_last1h_C": {
+  "value": -0.030000000000001137,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "T(4 h)-T(3 h)，含符号"
+ },
+ "T_at_3h_C": {
+  "value": 50.195,
+  "unit": "degC",
+  "source": "figdata/env_att1.csv",
+  "method": "t=3 h 的 T"
+ },
+ "sens_ratio_D_over_h_A": {
+  "value": 631.2857142857143,
+  "unit": "-",
+  "source": "figdata/sensitivity.csv",
+  "method": "S_p(D)/S_p(h)"
+ },
+ "sens_orders_D_over_h_A": {
+  "value": 2.8002259615480365,
+  "unit": "order",
+  "source": "重算",
+  "method": "log10 比值"
+ },
+ "sens_ratio_D_over_h_B": {
+  "value": 628.2142857142857,
+  "unit": "-",
+  "source": "figdata/sensitivity.csv",
+  "method": "S_p(D)/S_p(h)"
+ },
+ "sens_orders_D_over_h_B": {
+  "value": 2.798107808115242,
+  "unit": "order",
+  "source": "重算",
+  "method": "log10 比值"
+ },
+ "orders_Tspan2_over_disc": {
+  "value": 3.4042082574323844,
+  "unit": "order",
+  "source": "重算",
+  "method": "log10(±2 degC 极差 / 生产网格差)"
+ },
+ "orders_T1deg_over_disc": {
+  "value": 2.801672284569525,
+  "unit": "order",
+  "source": "重算",
+  "method": "log10(±1 degC 斜率 / 生产网格差)"
+ }
+}
